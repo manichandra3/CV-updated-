@@ -1,128 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <title>Manichandra</title>
     <link rel="stylesheet" href="css1/styles.css" />
     <link rel="icon" href="images/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap"
-      rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap"
+        rel="stylesheet"
     />
-  </head>
-  <body>
+    <style>
+        /* Add CSS styles here */
+        body {
+            margin: 0;
+            font-family: 'Merriweather', sans-serif;
+        }
+
+        .top-container {
+            background-color: #B9EDDD;
+            margin-left: auto;
+        }
+
+        .middle-container,
+        .bottom-container {
+            text-align: center;
+            background-color: #ecf1f0;
+        }
+
+        .cloud,
+        .cloud1,
+        .cloud2 {
+            position: relative;
+            left: 0;
+        }
+
+        .cloud1 {
+            left: 300px;
+        }
+
+        .cloud2 {
+            position: absolute;
+            margin-top: 16%;
+        }
+
+        .mountain {
+            display: block;
+            margin: 0 auto;
+            width: auto;
+        }
+
+        .flaticon1 {
+            height: 200px;
+            position: relative;
+            margin-top: 0%;
+        }
+
+        .sub {
+            color: #577D86;
+        }
+
+        .bottom-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 50px 50px;
+        }
+
+        .cpyrght {
+            grid-column: span 3;
+        }
+
+        .btn {
+            margin-bottom: 20px;
+            text-align: inherit;
+        }
+
+        /* Add any other styles to modify or include */
+    </style>
+</head>
+<body>
     <div class="top-container">
-      <div1>
-        <img src="images/cloud.png" alt="" class="cloud" />
-        <img src="images/cloud.png" alt="" class="cloud2" />
-        <h1 font = Sans>I'm Manichandra</h1>
-        <strong><p class="sub">a student of IIIT Guwahati</p></strong>
-      </div1>
-	  <img src="images/cloud.png" alt="" class="cloud1" />
-      <img src="images/mountains.png" alt="mountain-img" class="mountain" />
-      
+        <div>
+            <img src="images/cloud.png" alt="" class="cloud" />
+            <img src="images/cloud.png" alt="" class="cloud2" />
+            <h1>I'm Manichandra</h1>
+            <strong><p class="sub">a student of IIIT Guwahati</p></strong>
+        </div>
+        <img src="images/cloud.png" alt="" class="cloud1" />
+        <img src="images/mountains.png" alt="mountain-img" class="mountain" />
     </div>
     <div class="middle-container">
-      <div class="profile">
-        <img src="" alt="" />
-        <h2>Hello</h2>
-        <img
-          src="images/young-man.png"
-          alt="animated icon of a young-man"
-          class="flaticon1"
-        />
-        <p>
-          Iam currently puring an undergraduate degree in computer science at Indian Institute
-          of Information Technology Guwahati.
-        </p>
-      </div>
-      <hr />
-      <div class="skills">
-        <h2>Skills</h2>
-        <img src="images/skill.png" alt="skills" class="flaticon1" />
-        <div class="skill-row">
-          <img class="" src="" alt="" />
-          <h3>Lorem & Ipsum</h3>
-          <p>
-            Lorem ipsum dolor sit amet, quis in duis, iaculis id felis.
-            Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit
-            nam, lectus ante, ut lorem eros.
-          </p>
+        <div class="profile">
+            <img src="" alt="" />
+            <h2>Hello</h2>
+            <img
+                src="images/young-man.png"
+                alt="animated icon of a young-man"
+                class="flaticon1"
+            />
+            <p>
+                I am currently pursuing an undergraduate degree in computer science at Indian Institute of Information Technology Guwahati.
+            </p>
         </div>
-        <div class="skill-row">
-          <img class="" src="" alt="" />
-          <h3>Lorem Ipsum Dolor</h3>
-          <p>
-            Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu,
-            bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel
-            eu, rutrum nam.
-          </p>
+        <hr />
+        <div class="skills">
+            <h2>Skills</h2>
+            <img src="images/skill.png" alt="skills" class="flaticon1" />
+            <div class="skill-row">
+                <img class="" src="" alt="" />
+                <h3>Lorem & Ipsum</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, quis in duis, iaculis id felis.
+                    Consectetuer vestibulum, nunc urna lectus, erat ligula.
+                    Hendrerit nam, lectus ante, ut lorem eros.
+                </p>
+            </div>
+            <div class="skill-row">
+                <img class="" src="" alt="" />
+                <h3>Lorem Ipsum Dolor</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu,
+                    bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel
+                    eu, rutrum nam.
+                </p>
+            </div>
         </div>
-      </div>
-      <hr />
-      <div class="contact-me">
-        <h2>Get In Touch</h2>
-        <h3>Lorem ipsum dolor sit amet, non elit.</h3>
-        <p>
-          Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales,
-          tellus donec dui, ornare erat.
-        </p>
-        <form action="mailto:manichandra371@email.com">
-          <button class="btn">CONTACT</button>
-        </form>
-      </div>
+        <hr />
+        <div class="contact-me">
+            <h2>Get In Touch</h2>
+            <h3>Lorem ipsum dolor sit amet, non elit.</h3>
+            <p>
+                Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales,
+                tellus donec dui, ornare erat.
+            </p>
+            <form action="mailto:manichandra371@email.com">
+                <button class="btn">CONTACT</button>
+            </form>
+        </div>
     </div>
 
     <div class="bottom-container">
-      <form
-        action="https://www.linkedin.com/in/manichandra-ganapathri-2ab294257/"
-      >
-        <button class="footer-link">LinkedIn</button>
-      </form>
-      <form action="https://twitter.com/Manichandra_17">
-        <button class="footer-link">Twitter</button>
-      </form>
-      <form action="https://www.iiitg.ac.in/">
-        <button class="footer-link">Website</button>
-      </form>
-      <p class="cpyrght">© Manichandra Ganapathri.</p>
+        <form action="https://www.linkedin.com/in/manichandra-ganapathri-2ab294257/">
+            <button class="footer-link">LinkedIn</button>
+        </form>
+        <form action="https://twitter.com/Manichandra_17">
+            <button class="footer-link">Twitter</button>
+        </form>
+        <form action="https://www.iiitg.ac.in/">
+            <button class="footer-link">Website</button>
+        </form>
+        <p class="cpyrght">© Manichandra Ganapathri.</p>
     </div>
     <script>
-      // JavaScript code for cloud animation on scroll
-      const cloud1 = document.querySelector('.cloud1');
-      const cloud2 = document.querySelector('.cloud');
-      const cloud3 = document.querySelector('.cloud2');
+        // JavaScript code for cloud animation on scroll
+        const cloud1 = document.querySelector('.cloud1');
+        const cloud2 = document.querySelector('.cloud');
+        const cloud3 = document.querySelector('.cloud2');
 
-      // Function to move clouds based on scroll position
-      function moveCloudsOnScroll() {
-        // Get the scroll position
-        const scrollPosition = window.scrollY;
+        // Function to move clouds based on scroll position
+        function moveCloudsOnScroll() {
+            // Get the scroll position
+            const scrollPosition = window.scrollY;
 
-        // Adjust the position of clouds based on scroll position
-        const cloud1Position = scrollPosition * 0.2;
-        const cloud2Position = scrollPosition * 0.2;
-        const cloud3Position = -scrollPosition * 0.2;
+            // Adjust the position of clouds based on scroll position
+            const cloud1Position = scrollPosition * 0.2;
+            const cloud2Position = scrollPosition * 0.2;
+            const cloud3Position = -scrollPosition * 0.2;
 
-        // Apply transformations to move clouds
-        cloud1.style.transform = `translateX(${cloud1Position}%)`;
-        cloud2.style.transform = `translateX(${cloud2Position}%)`;
-        cloud3.style.transform = `translateX(${cloud2Position}%)`;
+            // Apply transformations to move clouds
+            cloud1.style.transform = `translateX(${cloud1Position}px)`;
+            cloud2.style.transform = `translateX(${cloud2Position}px)`;
+            cloud3.style.transform = `translateX(${cloud3Position}px)`;
 
-        // Call the function on the next available animation frame
-        requestAnimationFrame(moveCloudsOnScroll);
-      }
+            // Call the function on the next available animation frame
+            requestAnimationFrame(moveCloudsOnScroll);
+        }
 
-      // Start the cloud animation on scroll
-      moveCloudsOnScroll();
-
-      // Event listener to handle window resize and update clouds position
-      window.addEventListener('resize', () => {
+        // Start the cloud animation on scroll
         moveCloudsOnScroll();
-      });
-    </script>  
-    </body>
+
+        // Event listener to handle window resize and update clouds position
+        window.addEventListener('resize', () => {
+            moveCloudsOnScroll();
+        });
+    </script>
+</body>
 </html>
