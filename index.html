@@ -4,13 +4,11 @@
     <meta charset="UTF-8" />
     <title>Manichandra</title>
     <link rel="stylesheet" href="css1/styles.css" />
-    <link rel="icon" href="images/favicon.ico" />
+    <link rel="icon" href="images/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap"
-        rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+
     <style>
         /* Add CSS styles here */
         body {
@@ -18,9 +16,72 @@
             font-family: 'Merriweather', sans-serif;
         }
 
+        .navigation-bar {
+            position: fixed;
+            z-index: 1;
+            width: 100%;
+            background-color: #B9EDDD;
+            padding: 10px;
+            box-shadow: 0 0px 1px rgba(0, 0, 0, 2);
+            text-align: center;
+        }
+
+        .navigation-bar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: center; /* Center the items horizontally */
+        }
+
+        .navigation-bar img {
+            height: 40px;
+            width: 40px;
+            float: left;
+        }
+
+        .mountain {
+            position:relative;
+            top: 93px;
+        }
+
+        .navigation-bar li {
+            float: right;
+            margin-right: 20px;
+        }
+
+        .navigation-bar a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            text-align: center;
+            cursor: pointer;
+        }
+
         .top-container {
             background-color: #B9EDDD;
             margin-left: auto;
+            text-align: center;
+            height: 890px;
+        }
+
+        h1 {
+            position: relative;
+            font-family: 'Bungee Spice', cursive;
+            transition: transform 0.5s;
+            /* Change font to Bungee Spice */
+            display: inline-block;
+
+        }
+
+        h1:hover span {
+            transform: scale(1.2);
+        }
+
+        h1 span {
+            display: inline-block;
+            transition: transform 0.5s;
         }
 
         .middle-container,
@@ -33,22 +94,36 @@
         .cloud1,
         .cloud2 {
             position: relative;
-            left: 0;
+            left: 100px;
         }
 
+        .cloud {
+            position: absolute;
+            left: 1300px;
+            top: 60px;
+        }
+        .hello{
+            font-size: x-large;
+        }
         .cloud1 {
             left: 300px;
         }
 
         .cloud2 {
             position: absolute;
-            margin-top: 16%;
+            margin-top: 14%;
+            left: 100px;
         }
 
         .mountain {
             display: block;
             margin: 0 auto;
             width: auto;
+        }
+
+        .logo {
+            width: 50%;
+            height: 50%;
         }
 
         .flaticon1 {
@@ -59,6 +134,7 @@
 
         .sub {
             color: #577D86;
+            font-family: 'Bungee Spice', cursive;
         }
 
         .bottom-container {
@@ -75,25 +151,34 @@
             margin-bottom: 20px;
             text-align: inherit;
         }
-
         /* Add any other styles to modify or include */
+
     </style>
 </head>
 <body>
-    <div class="top-container">
+    <div class="navigation-bar">
+
+        <ul>
+            <li><a href="#top">HOME</a></li>
+            <li><a href="#profile">HELLO</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </div>
+    <div class="top-container" id="top">
         <div>
             <img src="images/cloud.png" alt="" class="cloud" />
             <img src="images/cloud.png" alt="" class="cloud2" />
-            <h1>I'm Manichandra</h1>
-            <strong><p class="sub">a student of IIIT Guwahati</p></strong>
+            <h1><span>M</span><span>a</span><span>n</span><span>i</span><span>c</span><span>h</span><span>a</span><span>n</span><span>d</span><span>r</span><span>a</span></h1>
+            <strong><h2 class="sub">A Student of Computer Science</h2></strong>
         </div>
         <img src="images/cloud.png" alt="" class="cloud1" />
         <img src="images/mountains.png" alt="mountain-img" class="mountain" />
     </div>
-    <div class="middle-container">
+    <div class="middle-container" id = "profile">
         <div class="profile">
             <img src="" alt="" />
-            <h2>Hello</h2>
+            <strong><h2 class="hello">Hello</h2></strong>
             <img
                 src="images/young-man.png"
                 alt="animated icon of a young-man"
@@ -140,7 +225,7 @@
         </div>
     </div>
 
-    <div class="bottom-container">
+    <div class="bottom-container" id = "contact" >
         <form action="https://www.linkedin.com/in/manichandra-ganapathri-2ab294257/">
             <button class="footer-link">LinkedIn</button>
         </form>
@@ -164,9 +249,14 @@
             const scrollPosition = window.scrollY;
 
             // Adjust the position of clouds based on scroll position
-            const cloud1Position = scrollPosition * 0.2;
-            const cloud2Position = scrollPosition * 0.2;
-            const cloud3Position = -scrollPosition * 0.2;
+            const cloud1Position = -scrollPosition * 0.2;
+            const cloud2Position = -scrollPosition * 0.2;
+            const cloud3Position = scrollPosition * 0.2;
+
+            // Apply transformations with a smooth transition
+            cloud1.style.transition = 'transform 0.5s ease-out';
+            cloud2.style.transition = 'transform 0.5s ease-out';
+            cloud3.style.transition = 'transform 0.5s ease-out';
 
             // Apply transformations to move clouds
             cloud1.style.transform = `translateX(${cloud1Position}px)`;
@@ -183,6 +273,21 @@
         // Event listener to handle window resize and update clouds position
         window.addEventListener('resize', () => {
             moveCloudsOnScroll();
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('.navigation-bar a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth'
+                });
+            });
         });
     </script>
 </body>
