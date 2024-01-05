@@ -35,6 +35,8 @@
     display: block;
     margin: 0 auto 0 auto;
     width: auto;
+
+
 }
 .flaticon1{
     height: 200px;
@@ -96,13 +98,7 @@ button {
 button:hover{
     background: #66bfbf;
 }
-img {
-	transition: transform 0.2s;
-}
-img:hover {
-	transform: scale(1.1);
-	
-}
+
 
 
 
