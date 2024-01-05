@@ -18,29 +18,31 @@
     <div class="top-container">
       <div1>
         <img src="images/cloud.png" alt="" class="cloud" />
+        <img src="images/cloud.png" alt="" class="cloud2" />
         <h1 font = Sans>I'm Manichandra</h1>
-        <strong><p class="sub">a student of IIT Guwahati</p></strong>
+        <strong><p class="sub">a student of IIIT Guwahati</p></strong>
       </div1>
 	  <img src="images/cloud.png" alt="" class="cloud1" />
       <img src="images/mountains.png" alt="mountain-img" class="mountain" />
+      
     </div>
     <div class="middle-container">
       <div class="profile">
         <img src="" alt="" />
-        <h2>Hello.</h2>
+        <h2>Hello</h2>
         <img
           src="images/young-man.png"
           alt="animated icon of a young-man"
           class="flaticon1"
         />
         <p>
-          Iam currently puring my degree in computer science at Indian Institute
+          Iam currently puring an undergraduate degree in computer science at Indian Institute
           of Information Technology Guwahati.
         </p>
       </div>
       <hr />
       <div class="skills">
-        <h2>My Skills.</h2>
+        <h2>Skills</h2>
         <img src="images/skill.png" alt="skills" class="flaticon1" />
         <div class="skill-row">
           <img class="" src="" alt="" />
@@ -93,6 +95,7 @@
       // JavaScript code for cloud animation on scroll
       const cloud1 = document.querySelector('.cloud1');
       const cloud2 = document.querySelector('.cloud');
+      const cloud3 = document.querySelector('.cloud2');
 
       // Function to move clouds based on scroll position
       function moveCloudsOnScroll() {
@@ -100,12 +103,14 @@
         const scrollPosition = window.scrollY;
 
         // Adjust the position of clouds based on scroll position
-        const cloud1Position = -scrollPosition * 0.5;
-        const cloud2Position = -scrollPosition * 0.3;
+        const cloud1Position = scrollPosition * 0.2;
+        const cloud2Position = scrollPosition * 0.2;
+        const cloud3Position = -scrollPosition * 0.2;
 
         // Apply transformations to move clouds
         cloud1.style.transform = `translateX(${cloud1Position}%)`;
         cloud2.style.transform = `translateX(${cloud2Position}%)`;
+        cloud3.style.transform = `translateX(${cloud2Position}%)`;
 
         // Call the function on the next available animation frame
         requestAnimationFrame(moveCloudsOnScroll);
@@ -118,6 +123,6 @@
       window.addEventListener('resize', () => {
         moveCloudsOnScroll();
       });
-    </script>
-  </body>
+    </script>  
+    </body>
 </html>
