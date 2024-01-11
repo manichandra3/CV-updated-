@@ -1,107 +1,248 @@
 /*class selectors*/
-.top-container {
-    background-color: #B9EDDD;
-    margin-left: auto;
 
 
-}
-.middle-container {
-    align-content: center;
-    text-align: center;
-    background-color: #ecf1f0;
-}
-.bottom-container {
-    align-content: center;
-    text-align: center;
-    background-color: #ecf1f0;
-}
-.cloud {
-    position: relative;
-    left: 1000px;
-}
-.cloud1 {
-	
-    position: relative;
-    left: 300px;
-    
-}
-.cloud2 {
-	position: absolute;
-	margin-top: 16%;
-	
-	
-}
-.mountain {
-    display: block;
-    margin: 0 auto 0 auto;
-    width: auto;
 
 
-}
-.flaticon1{
-    height: 200px;
-    position: relative;
-    margin-top: 0%;
-}
+/*.sub {*/
+/*    color: #577D86;*/
+/*}*/
+/*.bottom-container{*/
+/*    display:grid;*/
+/*    grid-template-columns: 1fr 1fr 1fr;*/
+/*    grid-template-rows: 50px 50px;*/
+/*    border:0;*/
+/*}*/
+/*.cpyrght {*/
+/*    grid-column: span 3;*/
+/*}*/
+/*.btn{*/
+/*    margin-bottom: 20px;*/
+/*    text-align:inherit;*/
+/*}*/
+/*!*element selector*!*/
+/*body {*/
+/*    margin: 0;*/
+/*    font-family: 'Merriweather',sans-serif;*/
+/*}*/
 
-.sub {
-    color: #577D86;
-}
-.bottom-container{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 50px 50px;
-    border:0;
-}
-.cpyrght {
-    grid-column: span 3;
-}
-.btn{
-    margin-bottom: 20px;
-    text-align:inherit;
-}
-/*element selector*/
+/*h1 {*/
+/*    font-family: 'DynaPuff', cursive;*/
+/*    font-size: 180%;*/
+/*    margin: 50px auto 0 auto;*/
+/*    color: #577D86;*/
+/*    line-height: 2;*/
+/*}*/
+/*h2 {*/
+/*    font-weight: normal;*/
+/*}*/
+/*h3 {*/
+/*    color: #11999E;*/
+/*}*/
+/*a {*/
+/*    color: #11999E;*/
+/*}*/
+/*br {*/
+/*    background-color: #11999E;*/
+/*}*/
+/*button {*/
+/*    background: none;*/
+/*    height: 30px;*/
+/*    width:80px;*/
+/*}*/
+
+
+/*button:hover{*/
+/*    background: #66bfbf;*/
+/*}*/
 body {
-    margin: 0px;
-    font-family: 'Merriweather',sans-serif;
+
+
 }
-div1 {
+
+
+nav {
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: #fff;
+    padding: 10px 0;
+}
+
+.mountain {
+    position: absolute;
+
+    bottom: 0;
+    left: 35%;
+    width: auto;
+    height: auto;
+}
+
+/*ffebcd*/
+.top-container {
+    background: linear-gradient(
+            to bottom,
+            #87ceeb,   /* Peach (light orange) at the top */
+            #ffd700,   /* Gold (yellow) in the middle */
+            #87ceeb    /* Sky Blue at the bottom */
+    );
     text-align: center;
-    margin: 0 auto 0 auto;
-    font-family: 'DynaPuff', cursive;
-    font-size: 180%;
+    height: 870px;
+}
+body {
+    font-family: 'Unbounded', sans-serif; /* Use Encode Sans for the body text */
+}
+
+h1, h2, h3 {
+    font-family: 'Unbounded', cursive; /* Use Abril Fatface for headings */
+}
+
+.head{
+    font-family: 'Unbounded', cursive;
+}
+.hello {
+    font-family: 'Unbounded', cursive;
+}
+.name {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 h1 {
-    font-family: 'DynaPuff', cursive;
-    font-size: 180%;
-    margin: 50px auto 0 auto;
-    color: #577D86;
-    line-height: 2;
+    position: relative;
+    font-family: 'Unbounded', cursive;
+    transition: transform 0.5s;
+
+    /* Change font to Bungee Spice */
+    display: inline-block;
 }
-h2 {
-    font-weight: normal;
+h1:hover span {
+    transform: scale(1.2);
 }
-h3 {
-    color: #11999E;
+h1 span {
+    display: inline-block;
+    transition: transform 0.5s;
 }
-a {
-    color: #11999E;
+p{
+    text-align: center;
+    font-family: "Unbounded", serif;
 }
-br {
-    background-color: #11999E;
+.middle-container, .bottom-container {
+    margin-top: 0;
+    text-align: center;
 }
+.middle-container {
+    background: linear-gradient(
+            to bottom,
+            #87ceeb,
+            #bba38d,   /* Saddle Brown at the top */ #96726e /* Dark brown at the bottom */
+    );
+    /* Add additional styling as needed */
+
+}
+.bottom-container{
+    position: relative;
+    background-color: #96726e;
+}
+.cloud, .cloud1, .cloud2 {
+    position: relative;
+    left: 100px;
+}
+.cloud {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+
+}
+
+.cloud1 {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+}
+
+.cloud2 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+}
+
+
+.hello{
+    font-size: x-large;
+}
+.flaticon1 {
+    height: 200px;
+    position: relative;
+    margin-top: 0;
+}
+.sub {
+    color: #E4D8DC;
+    font-family: 'Bungee Spice', cursive;
+}
+.footer-link,
+.btn {
+    margin: 10px 0; /* Adjust the margin as needed */
+}
+
+.contact-me {
+    margin-top: 20px; /* Adjust the top margin for the contact-me section */
+}
+
+.cpyrght {
+    margin-top: 20px; /* Adjust the top margin for the copyright text */
+}
+/* Define variables */
+/* Define variables */
+:root {
+    --button-radius: 0.75em;
+    --button-color: #000000;
+    --button-outline-color: #ffffff;
+    --button-hover-color: #333333;
+    --button-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Button styles */
 button {
-    background: none;
-    height: 30px;
-    width:80px;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: var(--button-radius);
+    background-color: var(--button-outline-color);
+    color: var(--button-color);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    display: inline-block; /* Make buttons display horizontally */
+    margin-right: 10px; /* Add spacing between buttons */
 }
-button:hover{
-    background: #66bfbf;
+
+button .button_top {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid var(--button-outline-color);
+    border-radius: var(--button-radius);
+    padding: 0.75em 1.5em;
+    background-color: var(--button-color);
+    color: var(--button-outline-color);
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
 }
 
+button:hover {
+    background-color: var(--button-hover-color);
+    box-shadow: var(--button-shadow);
+}
 
+button:hover .button_top {
+    transform: translateY(-0.33em);
+}
 
-
-
-
-
+button:active {
+    transform: translateY(0);
+}
