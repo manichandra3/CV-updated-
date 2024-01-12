@@ -63,7 +63,7 @@ body {
 nav {
     width: 100%;
     margin: 0 auto;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     z-index: 1;
@@ -86,7 +86,7 @@ nav {
             to bottom,
             #87ceeb,   /* Peach (light orange) at the top */
             #ffd700,   /* Gold (yellow) in the middle */
-            #87ceeb    /* Sky Blue at the bottom */
+            #9cc042 /* Sky Blue at the bottom */
     );
     text-align: center;
     height: 870px;
@@ -127,26 +127,39 @@ h1 span {
     display: inline-block;
     transition: transform 0.5s;
 }
-p{
+.text {
+    margin-left: 330px;
+    margin-right: 330px;
+}
+.skills{
     text-align: center;
-    font-family: "Unbounded", serif;
 }
 .middle-container, .bottom-container {
     margin-top: 0;
     text-align: center;
+    text-after-overflow: 100px;
 }
 .middle-container {
     background: linear-gradient(
             to bottom,
-            #87ceeb,
-            #bba38d,   /* Saddle Brown at the top */ #96726e /* Dark brown at the bottom */
+            #9cc042,   /* Saddle Brown at the top */
+            #bba38d /* Dark brown at the bottom */
     );
     /* Add additional styling as needed */
-
+}
+.skill-icon{
+    scale: 10%;
+}
+.list{
+    text-align: justify-all;
 }
 .bottom-container{
     position: relative;
-    background-color: #96726e;
+    background: linear-gradient(
+            to bottom,
+            #bba38d,
+            #1377b7
+    );
 }
 .cloud, .cloud1, .cloud2 {
     position: relative;
@@ -173,10 +186,10 @@ p{
 
 
 .hello{
-    font-size: x-large;
+    font-size: xx-large;
 }
-.flaticon1 {
-    height: 200px;
+.flat-icon {
+    height: 256px;
     position: relative;
     margin-top: 0;
 }
@@ -187,10 +200,11 @@ p{
 .footer-link,
 .btn {
     margin: 10px 0; /* Adjust the margin as needed */
+
 }
 
 .contact-me {
-    margin-top: 20px; /* Adjust the top margin for the contact-me section */
+
 }
 
 .cpyrght {
@@ -200,33 +214,41 @@ p{
 /* Define variables */
 :root {
     --button-radius: 0.75em;
-    --button-color: #000000;
-    --button-outline-color: #ffffff;
+    --button-color: #ffffff;
+    --button-outline-color: #000000;
     --button-hover-color: #333333;
     --button-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-
+.footer-icon{
+    height: 32px;
+    width: 32px;
+}
 /* Button styles */
 button {
-    font-size: 17px;
-    font-weight: bold;
-    border: none;
-    border-radius: var(--button-radius);
-    background-color: var(--button-outline-color);
-    color: var(--button-color);
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.1s ease, box-shadow 0.3s ease;
-    position: relative;
+    transition: background-color 0.5s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    position: absolute;
     overflow: hidden;
-    display: inline-block; /* Make buttons display horizontally */
+    display: flex; /* Make buttons display horizontally */
     margin-right: 10px; /* Add spacing between buttons */
-}
 
-button .button_top {
+}
+.linkedin-container{
+    left:10px;
+
+}
+.github-container {
+
+}
+.twitter-container{
+
+}
+button {
     display: block;
     box-sizing: border-box;
     border: 2px solid var(--button-outline-color);
-    border-radius: var(--button-radius);
+    border-radius: 8px;
     padding: 0.75em 1.5em;
     background-color: var(--button-color);
     color: var(--button-outline-color);
@@ -237,6 +259,7 @@ button .button_top {
 button:hover {
     background-color: var(--button-hover-color);
     box-shadow: var(--button-shadow);
+    border-radius: 8px;
 }
 
 button:hover .button_top {
