@@ -1,0 +1,271 @@
+/*class selectors*/
+
+
+
+
+/*.sub {*/
+/*    color: #577D86;*/
+/*}*/
+/*.bottom-container{*/
+/*    display:grid;*/
+/*    grid-template-columns: 1fr 1fr 1fr;*/
+/*    grid-template-rows: 50px 50px;*/
+/*    border:0;*/
+/*}*/
+/*.cpyrght {*/
+/*    grid-column: span 3;*/
+/*}*/
+/*.btn{*/
+/*    margin-bottom: 20px;*/
+/*    text-align:inherit;*/
+/*}*/
+/*!*element selector*!*/
+/*body {*/
+/*    margin: 0;*/
+/*    font-family: 'Merriweather',sans-serif;*/
+/*}*/
+
+/*h1 {*/
+/*    font-family: 'DynaPuff', cursive;*/
+/*    font-size: 180%;*/
+/*    margin: 50px auto 0 auto;*/
+/*    color: #577D86;*/
+/*    line-height: 2;*/
+/*}*/
+/*h2 {*/
+/*    font-weight: normal;*/
+/*}*/
+/*h3 {*/
+/*    color: #11999E;*/
+/*}*/
+/*a {*/
+/*    color: #11999E;*/
+/*}*/
+/*br {*/
+/*    background-color: #11999E;*/
+/*}*/
+/*button {*/
+/*    background: none;*/
+/*    height: 30px;*/
+/*    width:80px;*/
+/*}*/
+
+
+/*button:hover{*/
+/*    background: #66bfbf;*/
+/*}*/
+body {
+
+
+}
+
+
+nav {
+    width: 100%;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: #fff;
+    padding: 10px 0;
+}
+
+.mountain {
+    position: absolute;
+
+    bottom: 0;
+    left: 35%;
+    width: auto;
+    height: auto;
+}
+
+/*ffebcd*/
+.top-container {
+    background: linear-gradient(
+            to bottom,
+            #87ceeb,   /* Peach (light orange) at the top */
+            #ffd700,   /* Gold (yellow) in the middle */
+            #9cc042 /* Sky Blue at the bottom */
+    );
+    text-align: center;
+    height: 870px;
+}
+body {
+    font-family: 'Unbounded', sans-serif; /* Use Encode Sans for the body text */
+}
+
+h1, h2, h3 {
+    font-family: 'Unbounded', cursive; /* Use Abril Fatface for headings */
+}
+
+.head{
+    font-family: 'Unbounded', cursive;
+}
+.hello {
+    font-family: 'Unbounded', cursive;
+}
+.name {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+h1 {
+    position: relative;
+    font-family: 'Unbounded', cursive;
+    transition: transform 0.5s;
+
+    /* Change font to Bungee Spice */
+    display: inline-block;
+}
+h1:hover span {
+    transform: scale(1.2);
+}
+h1 span {
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.text {
+    margin-left: 330px;
+    margin-right: 330px;
+}
+.skills{
+    text-align: center;
+}
+.middle-container, .bottom-container {
+    margin-top: 0;
+    text-align: center;
+    text-after-overflow: 100px;
+}
+.middle-container {
+    background: linear-gradient(
+            to bottom,
+            #9cc042,   /* Saddle Brown at the top */
+            #bba38d /* Dark brown at the bottom */
+    );
+    /* Add additional styling as needed */
+}
+.skill-icon{
+    scale: 10%;
+}
+.list{
+    text-align: justify-all;
+}
+.bottom-container{
+    position: relative;
+    background: linear-gradient(
+            to bottom,
+            #bba38d,
+            #1377b7
+    );
+}
+.cloud, .cloud1, .cloud2 {
+    position: relative;
+    left: 100px;
+}
+.cloud {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+
+}
+
+.cloud1 {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+}
+
+.cloud2 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+}
+
+
+.hello{
+    font-size: xx-large;
+}
+.flat-icon {
+    height: 256px;
+    position: relative;
+    margin-top: 0;
+}
+.sub {
+    color: #E4D8DC;
+    font-family: 'Bungee Spice', cursive;
+}
+.footer-link,
+.btn {
+    margin: 10px 0; /* Adjust the margin as needed */
+
+}
+
+.contact-me {
+
+}
+
+.cpyrght {
+    margin-top: 20px; /* Adjust the top margin for the copyright text */
+}
+/* Define variables */
+/* Define variables */
+:root {
+    --button-radius: 0.75em;
+    --button-color: #ffffff;
+    --button-outline-color: #000000;
+    --button-hover-color: #333333;
+    --button-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.footer-icon{
+    height: 32px;
+    width: 32px;
+}
+/* Button styles */
+button {
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    position: absolute;
+    overflow: hidden;
+    display: flex; /* Make buttons display horizontally */
+    margin-right: 10px; /* Add spacing between buttons */
+
+}
+.linkedin-container{
+    left:10px;
+
+}
+.github-container {
+
+}
+.twitter-container{
+
+}
+button {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid var(--button-outline-color);
+    border-radius: 8px;
+    padding: 0.75em 1.5em;
+    background-color: var(--button-color);
+    color: var(--button-outline-color);
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+}
+
+button:hover {
+    background-color: var(--button-hover-color);
+    box-shadow: var(--button-shadow);
+    border-radius: 8px;
+}
+
+button:hover .button_top {
+    transform: translateY(-0.33em);
+}
+
+button:active {
+    transform: translateY(0);
+}
