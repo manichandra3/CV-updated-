@@ -67,8 +67,8 @@
         <br>
         <br>
         <strong><h2 class="hello">Hello</h2></strong>
-        <img src="images/young-man.png" alt="Animated Icon" class="flaticon1" />
-        <p>
+        <img src="images/young-man.png" alt="Animated Icon" class="flat-icon" />
+        <p class="text">
             I'm Manichandra, a dedicated second-year Computer Science student at the Indian Institute of Information Technology, Guwahati. I am enthusiastic about coding and problem-solving, with a strong passion for exploring emerging technologies such as Artificial Intelligence and Machine Learning.
         </p>
     </div>
@@ -76,41 +76,44 @@
     <!-- Skills Section -->
     <div class="skills" id = "skills">
         <h2 class = "hello">Skills</h2>
-        <img src="images/skill.png" alt="Skills Icon" class="flaticon1" />
         <div class="skill-row">
-            <img class="" src="images/skill-icon1.png" alt="Skill Icon 1" />
+            <img class="" src="images/skill-icon1.png" alt="skill-icon" />
             <h3>Web Development</h3>
-            <div class='skills'>
-                <ul>HTML</ul>
-                <ul>CSS</ul>
-                <ul>JavaScript</ul>
-                <ul> React</ul>
+            <div class="list">
+                <p>HTML,CSS,JavaScript,React</p>
+
             </div>
         </div>
         <div class="skill-row">
-            <img class="" src="images/skill-icon2.png" alt="Skill Icon 2" />
-            <h3>Data Science</h3>
-            <p>
-                Python, Pandas, NumPy, Machine Learning, etc.
-            </p>
+            <img class="" src="images/skill-icon2.png" alt="skill-icon" />
+            <h3>Security</h3>
+            <div class = "list">
+                <p>SQL,Penetration Testing,Cross Site Scripting (XSS),Networking</p>
+
+            </div>
         </div>
     </div>
+
 </div>
 
 <div class="bottom-container container" id="contact">
     <!-- Social Links and Footer -->
-    <form action="https://www.linkedin.com/in/manichandra-ganapathri-2ab294257/">
-        <button class="footer-link">LinkedIn</button>
-    </form>
-    <form action="https://twitter.com/Manichandra_17">
-        <button class="footer-link">Twitter</button>
-    </form>
-    <form action="https://www.iiitg.ac.in/">
-        <button class="footer-link">Website</button>
-    </form>
-    <form action="https://github.com/your-github-username">
-        <button class="footer-link">GitHub</button>
-    </form>
+    <div class = "linkedin-container">
+        <form action="https://www.linkedin.com/in/manichandra-ganapathri-2ab294257/">
+            <button class="footer-link"><img src="images/linkedin.png" class = "footer-icon"></button>
+        </form>
+    </div>
+    <div class = "twitter-container">
+        <form action="https://twitter.com/Manichandra_17">
+            <button class="footer-link">Twitter</button>
+        </form>
+    </div>
+
+    <div class = "github-container">
+        <form action="https://github.com/your-github-username">
+            <button class="footer-link">GitHub</button>
+        </form>
+    </div>
     <!-- Contact Me Section -->
     <div class="contact-me">
         <h2 class = "hello">Get In Touch</h2>
@@ -135,6 +138,7 @@
     const cloud1 = document.querySelector('.cloud1');
     const cloud2 = document.querySelector('.cloud');
     const cloud3 = document.querySelector('.cloud2');
+
 
     // Function to move clouds based on scroll position
     function moveCloudsOnScroll() {
@@ -178,7 +182,7 @@
 
             window.scrollTo({
                 top: targetElement.offsetTop,
-                behavior: 'smooth'
+                behavior: "smooth"
             });
         });
     });
