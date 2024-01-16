@@ -54,21 +54,17 @@
 /*button:hover{*/
 /*    background: #66bfbf;*/
 /*}*/
-body {
-
-
-}
-
 
 nav {
-    width: 100%;
     margin: 0 auto;
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
     background: #fff;
     padding: 10px 0;
+    height: 50%;
+    width: 100%;
+    z-index: 100;
 }
 
 .mountain {
@@ -197,11 +193,6 @@ h1 span {
     color: #E4D8DC;
     font-family: 'Bungee Spice', cursive;
 }
-.footer-link,
-.btn {
-    margin: 10px 0; /* Adjust the margin as needed */
-
-}
 
 .contact-me {
 
@@ -212,60 +203,40 @@ h1 span {
 }
 /* Define variables */
 /* Define variables */
-:root {
-    --button-radius: 0.75em;
-    --button-color: #ffffff;
-    --button-outline-color: #000000;
-    --button-hover-color: #333333;
-    --button-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
+
 .footer-icon{
     height: 32px;
     width: 32px;
 }
+.footer-link{
+    display: flex;
+    position: relative;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 50px;
+    margin: 10px;
+}
+
 /* Button styles */
 button {
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.5s ease, transform 0.2s ease, box-shadow 0.3s ease;
-    position: absolute;
+    transition: background-color 5s ease;
+    position: relative;
     overflow: hidden;
     display: flex; /* Make buttons display horizontally */
     margin-right: 10px; /* Add spacing between buttons */
 
 }
-.linkedin-container{
-    left:10px;
-
+button:hover{
+    scale: 1.05;
+    color: #1377b7;
+    background: #bba38d;
 }
-.github-container {
+.footer-link{
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 50px;
+    margin: 10px;
 
-}
-.twitter-container{
-
-}
-button {
-    display: block;
-    box-sizing: border-box;
-    border: 2px solid var(--button-outline-color);
-    border-radius: 8px;
-    padding: 0.75em 1.5em;
-    background-color: var(--button-color);
-    color: var(--button-outline-color);
-    transform: translateY(-0.2em);
-    transition: transform 0.1s ease;
-}
-
-button:hover {
-    background-color: var(--button-hover-color);
-    box-shadow: var(--button-shadow);
-    border-radius: 8px;
-}
-
-button:hover .button_top {
-    transform: translateY(-0.33em);
-}
-
-button:active {
-    transform: translateY(0);
 }

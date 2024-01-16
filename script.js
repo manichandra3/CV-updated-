@@ -3,8 +3,8 @@ function applyStyles() {
     const topContainer = document.querySelector('.top-container');
     const middleContainer = document.querySelector('.middle-container');
     const bottomContainer = document.querySelector('.bottom-container');
-    const cloud = document.querySelector('.cloud');
-    const cloud1 = document.querySelector('.cloud1');
+    // const cloud = document.querySelector('.cloud');
+    // const cloud1 = document.querySelector('.cloud1');
     const mountain = document.querySelector('.mountain');
     const flaticon1 = document.querySelector('.flaticon1');
     const sub = document.querySelector('.sub');
@@ -38,6 +38,9 @@ function applyStyles() {
     aTags.forEach((a) => a.classList.add('a'));
     brTags.forEach((br) => br.classList.add('br'));
     buttons.forEach((button) => button.classList.add('button'));
+    console.log("connection established!")
+
+
   }
   
   // Call the function to apply the styles
