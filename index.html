@@ -1,375 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Manichandra | Software Engineer</title>
-        
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
-        
-        <!-- Icons -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        
-        <!-- Animations -->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        
-        <!-- Bootstrap (Grid Only) -->
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
-        
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="css1/styles.css" />
-        <link rel="icon" href="images/favicon.ico" />
-    </head>
-    <body>
-        
-        <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container">
-                <a class="navbar-brand" href="#top">
-                    <span class="logo-text">M.</span>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="#profile">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link btn-resume" href="#contact">Contact</a></li>
-                    </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mani Chandra Ganapathri &mdash; Software Engineer</title>
+    <meta name="description" content="Portfolio of Mani Chandra Ganapathri &mdash; Software Engineer, AI/ML enthusiast, building scalable backend services and intelligent systems.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css1/styles.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- ======= Navigation ======= -->
+    <header class="nav-header" id="navHeader">
+        <nav class="nav-container">
+            <a href="#hero" class="nav-logo" aria-label="Home">
+                <span>MC</span>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ======= Hero ======= -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-greeting reveal">Hello, I'm</p>
+                <h1 class="hero-name reveal">Mani Chandra<span class="accent-dot">.</span></h1>
+                <h2 class="hero-tagline reveal">
+                    I build
+                    <span class="typewriter" id="typewriter"></span>
+                    <span class="cursor">|</span>
+                </h2>
+                <p class="hero-summary reveal">
+                    Software Engineering Intern at <strong>Wissen Technology</strong>.
+                    CS undergrad at <strong>IIIT Guwahati</strong>.
+                    I design scalable backend services and
+                    <span class="text-gradient">AI&#8209;powered applications</span>
+                    that solve real&#8209;world problems.
+                </p>
+                <div class="hero-actions reveal">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-ghost">Get In Touch</a>
                 </div>
             </div>
-        </nav>
 
-        <!-- Hero Section -->
-        <div class="hero-section" id="top">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-7" data-aos="fade-up" data-aos-duration="1000">
-                        <h4 class="greeting">Hi, my name is</h4>
-                        <h1 class="big-heading">Mani Chandra.</h1>
-                        <h2 class="sub-heading">I build intelligent systems.</h2>
-                        <p class="hero-text">
-                            Software Engineering Intern @ Wissen Technology. Computer Science student @ IIIT Guwahati.
-                            I specialize in building scalable backend services and <span class="highlight">AI-powered applications</span> that solve real-world problems.
-                        </p>
-                        <div class="hero-btns">
-                            <a href="#projects" class="btn btn-primary-custom">Check out my work</a>
-                            <a href="#contact" class="btn btn-outline-custom">Get in touch</a>
+            <!-- Decorative floating elements -->
+            <div class="hero-decoration" aria-hidden="true">
+                <div class="float-card float-card--1">
+                    <i class="fas fa-brain"></i>
+                    <span>AI / ML</span>
+                </div>
+                <div class="float-card float-card--2">
+                    <i class="fas fa-server"></i>
+                    <span>Backend</span>
+                </div>
+                <div class="float-card float-card--3">
+                    <i class="fas fa-database"></i>
+                    <span>Data</span>
+                </div>
+                <div class="glow-orb glow-orb--1"></div>
+                <div class="glow-orb glow-orb--2"></div>
+            </div>
+        </div>
+
+        <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+            <span></span>
+        </a>
+    </section>
+
+    <!-- ======= About ======= -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="section-number">01.</span> About Me
+            </h2>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>
+                        I'm Mani Chandra Ganapathri &mdash; a developer who thrives at the intersection of
+                        <strong>backend engineering</strong> and <strong>artificial intelligence</strong>.
+                        My journey into tech started with game development, which taught me the importance of
+                        performance&#8209;critical code and elegant architecture.
+                    </p>
+                    <p>
+                        Today I work as a Software Engineering Intern at
+                        <a href="#experience" class="inline-link">Wissen Technology</a>,
+                        building enterprise&#8209;grade services with Java and Spring Boot.
+                        At the same time, I'm pursuing my B.Tech at IIIT Guwahati and
+                        exploring how transformer models can power real&#8209;world products.
+                    </p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Bengaluru &amp; Hyderabad</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>IIIT Guwahati, B.Tech CS</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:ganapathri.chandra22b@iiitg.ac.in">ganapathri.chandra22b@iiitg.ac.in</a>
                         </div>
                     </div>
-                    <!-- Abstract AI Graphic Placeholder -->
-                    <div class="col-lg-5 d-none d-lg-block" data-aos="fade-left" data-aos-delay="200">
-                        <div class="ai-graphic">
-                            <div class="orb"></div>
-                            <div class="orb orb-2"></div>
-                            <div class="code-snippet">
-                                <pre>
-<span class="keyword">class</span> <span class="class-name">Engineer</span>:
-    <span class="keyword">def</span> <span class="function">__init__</span>(self):
-        self.skills = [<span class="string">"Java"</span>, <span class="string">"AI/ML"</span>]
-        self.passion = <span class="string">"Innovation"</span>
-                                </pre>
-                            </div>
-                        </div>
+                </div>
+                <div class="about-image reveal">
+                    <div class="image-frame">
+                        <img src="images/young-man.png" alt="Mani Chandra Ganapathri" loading="lazy" width="320" height="320">
                     </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Profile Section -->
-        <section id="profile" class="section-padding">
-            <div class="container">
-                <div class="section-header" data-aos="fade-up">
-                    <h2 class="numbered-heading">About Me</h2>
+    <!-- ======= Skills ======= -->
+    <section class="section section--alt" id="skills">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="section-number">02.</span> Skills &amp; Technologies
+            </h2>
+            <div class="skills-grid">
+
+                <div class="skill-card reveal">
+                    <div class="skill-card__icon"><i class="fas fa-code"></i></div>
+                    <h3 class="skill-card__title">Languages</h3>
+                    <ul class="skill-list">
+                        <li>Java <span class="badge">Advanced</span></li>
+                        <li>Python</li>
+                        <li>SQL (PostgreSQL, MySQL)</li>
+                        <li>HTML / CSS</li>
+                        <li>GDScript</li>
+                    </ul>
                 </div>
-                <div class="row">
-                    <div class="col-lg-7" data-aos="fade-right">
-                        <p>
-                            Hello! My name is Mani Chandra Ganapathri and I enjoy creating things that live on the internet. 
-                            My interest in software development started back when I was exploring game development, which taught me the importance of performance and logic.
+
+                <div class="skill-card reveal">
+                    <div class="skill-card__icon"><i class="fas fa-layer-group"></i></div>
+                    <h3 class="skill-card__title">Frameworks &amp; Libraries</h3>
+                    <ul class="skill-list">
+                        <li>Spring Boot / Data JPA</li>
+                        <li>Hibernate</li>
+                        <li>FastAPI</li>
+                        <li>React &middot; Node.js</li>
+                        <li>HuggingFace Transformers <span class="badge badge--ai">AI</span></li>
+                    </ul>
+                </div>
+
+                <div class="skill-card reveal">
+                    <div class="skill-card__icon"><i class="fas fa-tools"></i></div>
+                    <h3 class="skill-card__title">Developer Tools</h3>
+                    <ul class="skill-list">
+                        <li>Docker &middot; Kubernetes</li>
+                        <li>Git &middot; GitHub</li>
+                        <li>AWS</li>
+                        <li>MongoDB &middot; JDBC</li>
+                        <li>Postman</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card reveal">
+                    <div class="skill-card__icon"><i class="fas fa-brain"></i></div>
+                    <h3 class="skill-card__title">Core Competencies</h3>
+                    <ul class="skill-list">
+                        <li>Backend Architecture</li>
+                        <li>Microservices</li>
+                        <li>Multithreading</li>
+                        <li>Database Design</li>
+                        <li>AI / Machine Learning <span class="badge badge--ai">AI</span></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Experience ======= -->
+    <section class="section" id="experience">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="section-number">03.</span> Experience
+            </h2>
+            <div class="exp-timeline">
+
+                <article class="exp-card reveal">
+                    <div class="exp-card__marker"></div>
+                    <div class="exp-card__body">
+                        <div class="exp-card__header">
+                            <h3>Software Engineering Intern</h3>
+                            <a href="#" class="exp-card__company">@ Wissen Technology</a>
+                        </div>
+                        <p class="exp-card__date">
+                            <i class="far fa-calendar-alt"></i> Jan 2026 &ndash; Present
+                            <span class="separator">&middot;</span> Bengaluru
                         </p>
-                        <p>
-                            Fast-forward to today, and I've had the privilege of working as a <span class="highlight">Software Engineering Intern at Wissen Technology</span>. 
-                            I'm currently pursuing my B.Tech at <span class="highlight">IIIT Guwahati</span>.
+                        <ul class="exp-card__list">
+                            <li>Developing enterprise&#8209;grade backend services with <strong>Java</strong> and <strong>Spring Boot</strong>.</li>
+                            <li>Applying multithreading &amp; concurrency patterns to optimise data&#8209;intensive tasks.</li>
+                            <li>Streamlining database interactions using PostgreSQL &amp; JDBC with focus on query performance &amp; normalisation.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="exp-card reveal">
+                    <div class="exp-card__marker"></div>
+                    <div class="exp-card__body">
+                        <div class="exp-card__header">
+                            <h3>Freelance Web Developer</h3>
+                            <span class="exp-card__company">Self&#8209;Employed</span>
+                        </div>
+                        <p class="exp-card__date">
+                            <i class="far fa-calendar-alt"></i> 2023 &ndash; 2024
                         </p>
+                        <ul class="exp-card__list">
+                            <li>Engineered a full&#8209;stack registration system for a national academic olympiad, managing 1,000+ students with 100% uptime.</li>
+                            <li>Built secure, responsive frontend &amp; backend to handle high&#8209;traffic registration periods.</li>
+                        </ul>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Projects ======= -->
+    <section class="section section--alt" id="projects">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="section-number">04.</span> Projects
+            </h2>
+
+            <!-- Featured -->
+            <article class="project-featured reveal">
+                <div class="project-featured__info">
+                    <span class="project-label">Featured &middot; AI</span>
+                    <h3 class="project-featured__title">AI Document Intelligence App</h3>
+                    <div class="project-featured__desc">
                         <p>
-                            I build scalable backend services, design clean REST APIs, and work on <span class="highlight">AI-powered systems</span> that turn complex data into reliable products.
+                            An AI&#8209;powered platform that analyses <strong>75+ documents</strong> simultaneously
+                            using semantic search and transformer&#8209;based QA.
+                            Includes robust rate limiting and error handling for production reliability.
                         </p>
-                        <div class="quick-info-grid">
-                            <div class="info-item"><i class="fas fa-map-marker-alt"></i> Bengaluru & Hyderabad</div>
-                            <div class="info-item"><i class="fas fa-university"></i> IIIT Guwahati</div>
-                            <div class="info-item"><i class="fas fa-envelope"></i> ganapathri.chandra22b@iiitg.ac.in</div>
-                        </div>
                     </div>
-                    <div class="col-lg-5" data-aos="fade-left">
-                         <!-- Using a div with background image for better styling control or keeping the img tag if preferred -->
-                        <div class="profile-pic-wrapper">
-                            <div class="wrapper-inner">
-                                <img src="images/young-man.png" alt="Mani Chandra" class="profile-img">
-                            </div>
-                        </div>
+                    <ul class="project-tech-list">
+                        <li>React</li>
+                        <li>FastAPI</li>
+                        <li>Transformers</li>
+                        <li>PostgreSQL</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Live demo"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
+                <div class="project-featured__visual">
+                    <div class="project-visual-inner">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Grid of smaller projects -->
+            <div class="project-grid">
+
+                <article class="project-card reveal">
+                    <div class="project-card__top">
+                        <i class="fas fa-server project-card__icon"></i>
+                        <div class="project-card__links">
+                            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-card__title">Business Management REST API</h3>
+                    <p class="project-card__desc">
+                        RESTful API with 35+ endpoints &mdash; reduced query execution time by 40%
+                        through Hibernate optimisation. Normalised schema with 10+ entities for data integrity.
+                    </p>
+                    <ul class="project-card__tech">
+                        <li>Spring Boot</li>
+                        <li>MySQL</li>
+                        <li>Hibernate</li>
+                    </ul>
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="project-card__top">
+                        <i class="fas fa-gamepad project-card__icon"></i>
+                        <div class="project-card__links">
+                            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-card__title">Multiplayer Strategy Game</h3>
+                    <p class="project-card__desc">
+                        Real&#8209;time multiplayer RTS with lag compensation, strategic AI&#8209;controlled
+                        factions, and custom networking layer.
+                    </p>
+                    <ul class="project-card__tech">
+                        <li>Godot Engine</li>
+                        <li>GDScript</li>
+                        <li>Networking</li>
+                    </ul>
+                </article>
+
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Skills Section -->
-        <section id="skills" class="section-padding bg-darker">
-            <div class="container">
-                <div class="section-header" data-aos="fade-up">
-                    <h2 class="numbered-heading">My Skills</h2>
-                </div>
-                <div class="skills-grid">
-                    
-                    <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
-                        <div class="category-header">
-                            <i class="fas fa-code"></i>
-                            <h3>Languages</h3>
-                        </div>
-                        <div class="skill-tags">
-                            <span>Java (Advanced)</span>
-                            <span>Python</span>
-                            <span>SQL</span>
-                            <span>HTML/CSS</span>
-                            <span>GDScript</span>
-                        </div>
-                    </div>
+    <!-- ======= Education & Certifications ======= -->
+    <section class="section" id="education">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="section-number">05.</span> Education &amp; Certifications
+            </h2>
+            <div class="edu-grid">
 
-                    <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
-                        <div class="category-header">
-                            <i class="fas fa-layer-group"></i>
-                            <h3>Frameworks</h3>
-                        </div>
-                        <div class="skill-tags">
-                            <span>Spring Boot</span>
-                            <span>Spring Data JPA</span>
-                            <span>FastAPI</span>
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span class="highlight-tag">Transformers (AI)</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
-                        <div class="category-header">
-                            <i class="fas fa-tools"></i>
-                            <h3>Tools</h3>
-                        </div>
-                        <div class="skill-tags">
-                            <span>Docker</span>
-                            <span>Git</span>
-                            <span>AWS</span>
-                            <span>Kubernetes</span>
-                            <span>Postman</span>
-                            <span>MongoDB</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
-                        <div class="category-header">
-                            <i class="fas fa-brain"></i>
-                            <h3>Core Concepts</h3>
-                        </div>
-                        <div class="skill-tags">
-                            <span>Microservices</span>
-                            <span>Backend Dev</span>
-                            <span>Multithreading</span>
-                            <span>Database Design</span>
-                            <span class="highlight-tag">AI/ML</span>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Experience Section -->
-        <section id="experience" class="section-padding">
-            <div class="container">
-                <div class="section-header" data-aos="fade-up">
-                    <h2 class="numbered-heading">Where I've Worked</h2>
-                </div>
-                
-                <div class="timeline" data-aos="fade-up">
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3 class="role">Software Engineering Intern</h3>
-                            <h4 class="company">@ Wissen Technology</h4>
-                            <p class="timeline-date">Jan 2026 – Present</p>
-                            <ul class="job-description">
-                                <li>Developing and maintaining enterprise-grade backend services using <strong>Java</strong> and <strong>Spring Boot</strong>.</li>
-                                <li>Applying multithreading and concurrency patterns to optimize data-intensive tasks.</li>
-                                <li>Streamlining database interactions using PostgreSQL and JDBC with a focus on query performance.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3 class="role">Freelance Web Developer</h3>
-                            <h4 class="company">Self-Employed</h4>
-                            <p class="timeline-date">2023 – 2024</p>
-                            <ul class="job-description">
-                                <li>Engineered a full-stack registration system for a national academic olympiad.</li>
-                                <li>Managed 1,000+ students with 100% uptime during high-traffic periods.</li>
-                                <li>Built secure, responsive frontend and backend architectures.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="section-padding bg-darker">
-            <div class="container">
-                <div class="section-header" data-aos="fade-up">
-                    <h2 class="numbered-heading">Something I've Built</h2>
+                <div class="edu-card reveal">
+                    <div class="edu-card__icon"><i class="fas fa-university"></i></div>
+                    <h3>IIIT Guwahati</h3>
+                    <p class="edu-card__degree">B.Tech in Computer Science</p>
+                    <p class="edu-card__meta">July 2022 &ndash; June 2026 &middot; GPA 7.04 / 10</p>
                 </div>
 
-                <!-- Project 1 -->
-                <div class="project-card featured" data-aos="fade-up">
-                    <div class="row">
-                        <div class="col-md-7">
-                            <div class="project-content">
-                                <p class="project-overline">Featured Project</p>
-                                <h3 class="project-title">AI Document Intelligence App</h3>
-                                <p class="project-desc">
-                                    An AI-powered platform to analyze 75+ documents simultaneously using semantic search and transformer-based QA. 
-                                    Features robust rate limiting and error handling.
-                                </p>
-                                <ul class="project-tech">
-                                    <li>React</li>
-                                    <li>FastAPI</li>
-                                    <li>Transformers</li>
-                                    <li>PostgreSQL</li>
-                                </ul>
-                                <div class="project-links">
-                                    <a href="#"><i class="fab fa-github"></i></a>
-                                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-5 project-image-col">
-                             <div class="project-icon-placeholder ai-icon">
-                                <i class="fas fa-robot"></i>
-                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="row mt-5">
-                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-                        <div class="project-card-small">
-                            <div class="top-icons">
-                                <i class="far fa-folder"></i>
-                                <div class="links">
-                                    <a href="#"><i class="fab fa-github"></i></a>
-                                </div>
-                            </div>
-                            <h3 class="project-title">Business Management REST API</h3>
-                            <p class="project-desc">
-                                Designed a RESTful API with 35+ endpoints, reducing query execution time by 40% via Hibernate optimization.
-                            </p>
-                            <ul class="project-tech-small">
-                                <li>Spring Boot</li>
-                                <li>MySQL</li>
-                                <li>Hibernate</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="project-card-small">
-                            <div class="top-icons">
-                                <i class="fas fa-gamepad"></i>
-                                <div class="links">
-                                    <a href="#"><i class="fab fa-github"></i></a>
-                                </div>
-                            </div>
-                            <h3 class="project-title">Multiplayer Strategy Game</h3>
-                            <p class="project-desc">
-                                Created a real-time multiplayer RTS with lag compensation and strategic AI-controlled factions.
-                            </p>
-                            <ul class="project-tech-small">
-                                <li>Godot Engine</li>
-                                <li>GDScript</li>
-                                <li>Networking</li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="edu-card reveal">
+                    <div class="edu-card__icon"><i class="fas fa-certificate"></i></div>
+                    <h3>Machine Learning Specialization</h3>
+                    <p class="edu-card__degree">Stanford University / DeepLearning.AI</p>
+                    <p class="edu-card__meta">Supervised, Unsupervised &amp; Advanced Learning Algorithms</p>
                 </div>
 
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Education & Certs -->
-        <section id="education" class="section-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6" data-aos="fade-right">
-                        <div class="section-header">
-                            <h2 class="numbered-heading">Education</h2>
-                        </div>
-                        <div class="edu-card">
-                            <h3>Indian Institute of Information Technology Guwahati</h3>
-                            <p class="degree">B.Tech in Computer Science</p>
-                            <p class="date">July 2022 – June 2026</p>
-                            <p class="gpa">GPA: 7.04/10</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6" data-aos="fade-left">
-                        <div class="section-header">
-                            <h2 class="numbered-heading">Certifications</h2>
-                        </div>
-                        <div class="edu-card">
-                            <h3>Machine Learning Specialization</h3>
-                            <p class="issuer">Stanford University / DeepLearning.AI</p>
-                            <p class="details">Supervised, Unsupervised, Advanced Learning Algorithms</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- ======= Contact ======= -->
+    <section class="section section--alt section--contact" id="contact">
+        <div class="container container--narrow">
+            <h2 class="section-title reveal">
+                <span class="section-number">06.</span> Get In Touch
+            </h2>
+            <p class="contact-text reveal">
+                I'm actively looking for <strong>backend, platform, and AI/ML engineering</strong> opportunities.
+                Whether you have a role, a project idea, or just want to say hello &mdash;
+                my inbox is always open.
+            </p>
+            <a href="mailto:ganapathri.chandra22b@iiitg.ac.in" class="btn btn-primary btn-lg reveal">Say Hello</a>
+        </div>
+    </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="section-padding text-center">
-            <div class="container" data-aos="zoom-in">
-                <p class="highlight-text">What's Next?</p>
-                <h2 class="big-heading">Get In Touch</h2>
-                <p class="contact-desc">
-                    I'm currently looking for new backend, platform, and AI/ML engineering opportunities. 
-                    Whether you have a question or just want to say hi, I'll try my best to get back to you!
-                </p>
-                <a href="mailto:ganapathri.chandra22b@iiitg.ac.in" class="btn btn-primary-custom btn-lg">Say Hello</a>
-                
-                <div class="footer-socials">
-                    <a href="https://www.linkedin.com/in/manichandragon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/manichandragon" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                </div>
-                
-                <p class="footer-credit">
-                    Designed & Built by Mani Chandra Ganapathri
-                </p>
-            </div>
-        </section>
+    <!-- ======= Footer ======= -->
+    <footer class="footer">
+        <div class="footer-socials">
+            <a href="https://www.linkedin.com/in/manichandragon" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/manichandragon" target="_blank" rel="noopener" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:ganapathri.chandra22b@iiitg.ac.in" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+        <p class="footer-credit">
+            Designed &amp; Built by Mani Chandra Ganapathri
+        </p>
+    </footer>
 
-        <!-- Scripts -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="index.js"></script>
-        <script>
-            AOS.init();
-        </script>
-    </body>
+    <!-- Scripts (zero dependencies) -->
+    <script src="index.js"></script>
+</body>
 </html>
